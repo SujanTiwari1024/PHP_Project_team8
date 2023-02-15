@@ -1,11 +1,7 @@
+<?php include'header.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Order</title>
-</head>
+
 <body>
     <h1>This Order page</h1>
 
@@ -17,7 +13,7 @@
     <div class="order-rows">
         <div class="order-rows-img">
             <div class="order-rows-img-container">
-                <img src="image/salad.png"/>
+                <img src="../assets/images/salad.png"/>
             </div>
             <div class="order-rows-button">
                 <button>-</button>
@@ -30,7 +26,7 @@
         </div>
         <div class="order-rows-img">
             <div class="order-rows-img-container">
-            <img src="image/Meal-Plan-plate-protein.png"/>
+            <img src="../assets/images/Meal-Plan-plate-protein.png"/>
         </div>
             <div class="order-rows-button">
                 <button>-</button>
@@ -42,7 +38,7 @@
         </div>
         <div class="order-rows-img">
             <div class="order-rows-img-container">
-            <img src="image/mixveg.png"/></div>
+            <img src="../assets/images/mixveg.png"/></div>
             <div class="order-rows-button">
                 <button>-</button>
                 <button>Add</button>
@@ -56,7 +52,7 @@
     <div class="order-rows">
         <div class="order-rows-img">
             <div class="order-rows-img-container">
-                <img src="image/cake.png"/>
+                <img src="../assets/images/cake.png"/>
             </div>
             <div class="order-rows-button">
                 <button>-</button>
@@ -69,7 +65,7 @@
         </div>
         <div class="order-rows-img">
             <div class="order-rows-img-container">
-            <img src="image/cupcake.png"/>
+            <img src="../assets/images/cupcake.png"/>
         </div>
             <div class="order-rows-button">
                 <button>-</button>
@@ -81,7 +77,7 @@
         </div>
         <div class="order-rows-img">
             <div class="order-rows-img-container">
-            <img src="image/deserts1.png"/></div>
+            <img src="../assets/images/deserts1.png"/></div>
             <div class="order-rows-button">
                 <button>-</button>
                 <button>Add</button>
@@ -95,7 +91,7 @@
     <div class="order-rows">
         <div class="order-rows-img">
             <div class="order-rows-img-container">
-                <img src="image/bobatea.png"/>
+                <img src="../assets/images/bobatea.png"/>
             </div>
             <div class="order-rows-button">
                 <button>-</button>
@@ -107,7 +103,7 @@
         </div>
         <div class="order-rows-img">
             <div class="order-rows-img-container">
-            <img src="image/Coke.png"/>
+            <img src="../assets/images/Coke.png"/>
         </div>
             <div class="order-rows-button">
                 <button>-</button>
@@ -119,7 +115,7 @@
         </div>
         <div class="order-rows-img">
             <div class="order-rows-img-container">
-            <img src="image/mixjuice.png"/></div>
+            <img src="../assets/images/mixjuice.png"/></div>
             <div class="order-rows-button">
                 <button>-</button>
                 <button>Add</button>
@@ -152,3 +148,4 @@
 
 </body>
 </html>
+<?php include'footer.php'; ?>

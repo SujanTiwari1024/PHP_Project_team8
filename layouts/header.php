@@ -6,23 +6,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cool Restaurant</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../assets/images/css/style.css">
 
 </head>
 
 <body>
 
     <div class="header" id="myHeader">
-        <a class="logo-con" href="index.html">
-            <img src="image/logo.png" alt="Logo" class="logo">
+        <a class="logo-con" href="index.php">
+            <img src="../assets/images/logo.png" alt="Logo" class="logo">
             <h2>Cool Restaurant</h2>
         </a>
 
         <div class="header-links">
-            <a href="menu.html">Menu</a>
-            <a href="order.html">Order Online</a>
-            <a href="reservation.html">Reservations</a>
-            <a href="aboutus.html">About Us</a>
+            <a href="menu.php">Menu</a>
+            <a href="order.php">Order Online</a>
+            <a href="#">Reservations</a>
+            <a href="aboutus.php">About Us</a>
         </div>
     </div>
 

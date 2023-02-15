@@ -1,11 +1,7 @@
+<?php include'header.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us</title>
-</head>
+
 <body>
     <h1>This is About Us Page</h1>
 
@@ -28,8 +24,9 @@
         </article>
         
         
-        <img class="imgAbout" src="image/Special.jpg" alt="Foodplate">
+        <img class="imgAbout" src="../assets/images/Special.jpg" alt="Foodplate">
     </div>
     
 </body>
 </html>
+<?php include'footer.php'; ?>

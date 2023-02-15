@@ -9,13 +9,13 @@
             </div>
                 <div class="social-media">
                     <a href="https://www.facebook.com/">
-                        <img src="image/icons8-facebook-48.png" alt="Facebook"></a>
+                        <img src="../assets/images/icons8-facebook-48.png" alt="Facebook"></a>
                     <a href="https://twitter.com/">
-                        <img src="image/icons8-twitter-48.png" alt="Twitter"></a>
+                        <img src="../assets/images/icons8-twitter-48.png" alt="Twitter"></a>
                     <a href="https://www.instagram.com/">
-                        <img src="image/icons8-instagram-48.png" alt="Instagram"></a>
+                        <img src="../assets/images/icons8-instagram-48.png" alt="Instagram"></a>
                     <a href="https://www.youtube.com/">
-                        <img src="image/icons8-youtube-48.png" alt="Youtube"></a>
+                        <img src="../assets/images/icons8-youtube-48.png" alt="Youtube"></a>
                 </div>
         </div>
     </div>
