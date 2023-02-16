@@ -23,6 +23,8 @@
             <a href="order.php">Order Online</a>
             <a href="#">Reservations</a>
             <a href="aboutus.php">About Us</a>
+            <a href="customer.php">Customer</a>
+            <a href="customerList.php">Customer List</a>
         </div>
     </div>
 
