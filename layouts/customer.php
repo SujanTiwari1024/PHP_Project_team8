@@ -35,12 +35,12 @@ include "header.php";?>
             
             if($conn->query($sql)===TRUE){
                 
-                echo"Your information is added successfully";
+                echo" <h5> Your information is added successfully <h5>";
 
             }
             else{
 
-                echo"Error:" .$conn->error;
+                echo"Error:" .$conn->Error;
 
             }
         }

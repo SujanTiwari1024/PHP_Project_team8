@@ -1,6 +1,6 @@
 <?php
 $title = "Customer List";
-include "header.php";
+include "../layout/header.php";
 include 'db.php';
 
 
@@ -23,7 +23,8 @@ if($result->num_rows > 0){
     while($row = $result -> fetch_assoc()) {
         echo "
         <tr>
-        <td> $row[customerId]       </td>
+        <td><a href='edit.php?customerId=$row[customerId]'>$row[customerId] </a>     </td>
+        
         <td> $row[fName]            </td>
         <td> $row[lName]            </td>
         <td> $row[phoneNum]          </td>
@@ -48,4 +49,4 @@ $conn-> close();
 
 <?php ?>
 
-<?php include "footer.php" ?>
+<?php include "../layout/footer.php" ?>
