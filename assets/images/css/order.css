@@ -1,0 +1,79 @@
+.order-content{
+    padding-top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+.order-title {
+    border-bottom: 3px solid White;
+}
+
+.order-rows{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 35px;
+    margin: auto;
+    margin-top: 45px;
+}
+
+.order-rows-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1 1 28%;
+}
+
+.order-rows-img img{
+    width: 300px;
+    object-fit: contain;
+}
+
+.order-rows-img-container{
+    max-height: 400px;
+    max-width: 300px;
+}
+
+.order-rows-button {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.order-rows-button button{
+    background-color: white;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.order-rows-button button:hover{
+    background-color:#006e6e;
+    color: white;
+}
+
+.order-rows-button button:active{
+    background-color:white;
+    color: black;
+}
+
+.order-drinks img{
+    width: 250px;
+}
+
+.order-desserts img{
+    width: 250px;
+}
+
+@media screen and (max-width: 800px) {
+    .order-rows-img img{
+        width: 230px;
+        object-fit: contain;
+    }
+}

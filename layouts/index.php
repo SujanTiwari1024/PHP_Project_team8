@@ -1,9 +1,6 @@
 <?php include'header.php'; ?>
 
 <body>
-
-        
-    </div>
     <div class="content" >        
         <article class="content_info">
             <P>

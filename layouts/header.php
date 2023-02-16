@@ -7,20 +7,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cool Restaurant</title>
     <link rel="stylesheet" href="../assets/images/css/style.css">
+    <link rel="stylesheet" href="../assets/images/css/order.css">
 
 </head>
 
 <body>
 
-    <div class="header" id="myHeader">
+    <div class="header">
         <a class="logo-con" href="index.php">
-            <img src="../assets/images/logo.png" alt="Logo" class="logo">
-            <h2>Cool Restaurant</h2>
+            <img src="../assets/images/cool-logo01.png" alt="cool-logo01" class="logo">
+            <img src="../assets/images/cool-font03.png" alt="cool-font03" class="logo-3">
         </a>
 
         <div class="header-links">
             <a href="menu.php">Menu</a>
-            <a href="order.php">Order Online</a>
             <a href="#">Reservations</a>
             <a href="aboutus.php">About Us</a>
             <a href="customer.php">Customer</a>
@@ -32,4 +32,5 @@
                 <div class="dot"></div>
                 <div class="dot"></div>
                 <div class="dot"></div>
-            </div>
+    </div>
+         
