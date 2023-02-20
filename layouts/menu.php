@@ -122,4 +122,21 @@
 
     </div>
     </div>
+<!-- This part is used for the background image -->
+    <style> 
+body {
+    background-image: url(../assets/images/background2.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: aliceblue;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgb(206, 48, 48);
+}
+</style>
 <?php include'footer.php'; ?>
