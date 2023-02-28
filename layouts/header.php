@@ -21,7 +21,7 @@
 
         <div class="header-links">
             <a href="menu.php">Menu</a>
-            <a href="#">Reservations</a>
+            <a href="reservation.php">Reservations</a>
             <a href="aboutus.php">About Us</a>
             <a href="customer.php">Customer</a>
             <a href="customerList.php">Customer List</a>

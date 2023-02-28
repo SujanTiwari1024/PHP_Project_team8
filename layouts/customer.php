@@ -2,7 +2,7 @@
 $title = "customer";
 include "header.php";?>
 
-<form action="" method="post">
+<form action="" method="post" style="margin: 10rem 0 0 2rem;">
 
     <input type ="text" name ="fName" placeholder="First Name" required> <br><br>
     <input type ="text" name ="lName" placeholder="Last Name" required><br><br>
