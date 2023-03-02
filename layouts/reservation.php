@@ -31,6 +31,7 @@ include'header.php'; ?>
 
 <?php
 // Submit
+/*
 if(isset($_POST['submit'])) {
     
   // Retrieve data
@@ -45,11 +46,7 @@ if(isset($_POST['submit'])) {
   // Save to database or send email to restaurant
   include 'db.php';
   $sql="INSERT INTO reservation (reservationDate, reservationTime, numGuests)
-        VALUES ('$date', '$time', '$num_guests')";
-
-    $sql="INSERT INTO customer(fName, lName, phoneNum, email)
-    VALUES('$fName', '$lName', '$phoneNum','$email')";
-            
+        VALUE6           
   if($conn->query($sql) === TRUE){
     echo "<h5>Your reservation has been confirmed</h5>";
   } else {
@@ -57,6 +54,31 @@ if(isset($_POST['submit'])) {
   }
 
   exit;
+} */
+
+if(isset($_POST['submit'])) {
+    
+  // Retrieve data
+  $date = $_POST['date'];
+  $time = $_POST['time'];
+  $num_guests = $_POST['num_guests'];
+  $fName = $_POST['fName'];
+  $lName = $_POST['lName'];
+  $phoneNum = $_POST['phoneNum'];
+  $email = $_POST['email'];
+
+  // Save to database or send email to restaurant
+  include 'db.php';
+  $sql="INSERT INTO reservation (reservationDate, reservationTime, num_guest, fname, lname, phone_num, email)
+        VALUES('$date', '$time', '$num_guests', '$fName', '$lName', '$phoneNum', ' $email')";           
+  if($conn->query($sql) === TRUE){
+    echo "Done";
+  } else {
+    echo "Error: " . $conn-> error;
+  }
+
+  exit;
+
 }
 ?>
 
