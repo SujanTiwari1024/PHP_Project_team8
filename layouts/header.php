@@ -23,8 +23,12 @@
             <a href="menu.php">Menu</a>
             <a href="reservation.php">Reservations</a>
             <a href="aboutus.php">About Us</a>
-            <a href="customer.php">Customer</a>
+            
+            <a href="login.php">log in</a>
+            <a href="signup.php">sign up</a>
+
             <a href="customerList.php">Customer List</a>
+            
         </div>
     </div>
 
