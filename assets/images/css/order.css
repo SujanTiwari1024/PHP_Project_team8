@@ -77,3 +77,7 @@
         object-fit: contain;
     }
 }
+
+.cart-button{
+    margin-top: 10px;
+}
