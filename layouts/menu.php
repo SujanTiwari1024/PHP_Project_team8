@@ -83,13 +83,9 @@
                     <img src="../assets/images/salad.png" />
                 </div>
                 <div class="order-rows-button">
-<<<<<<< Updated upstream
-                    <button>Add to cart</button>
-=======
                 <button onclick="removeFromCart(0)">-</button>
                 <p> 3.30 €</p>
                 <button onclick="addToCart(0, 1)">+</button>
->>>>>>> Stashed changes
                 </div>
                 
                 <h2>Salad Bowl</h2>
@@ -99,13 +95,9 @@
                     <img src="../assets/images/Meal-Plan-plate-protein.png" />
                 </div>
                 <div class="order-rows-button">
-<<<<<<< Updated upstream
-                    <button>Add to cart</button>
-=======
                 <button onclick="removeFromCart(1)">-</button>
                 <p>10.00 €</p>
                 <button onclick="addToCart(1, 1)">+</button>
->>>>>>> Stashed changes
                 </div>
                 <h2>Fresh Meat with Rice</h2>
             </div>
@@ -114,13 +106,9 @@
                     <img src="../assets/images/mixveg.png" />
                 </div>
                 <div class="order-rows-button">
-<<<<<<< Updated upstream
-                    <button>Add to cart</button>
-=======
                 <button onclick="removeFromCart(2)">-</button>
                 <p>6.30 €</p>
                 <button onclick="addToCart(2, 1)">+</button>
->>>>>>> Stashed changes
                 </div>
                 <h2>Vegetable Mix</h2>
             </div>
@@ -130,13 +118,9 @@
                     <img src="../assets/images/cake.png" />
                 </div>
                 <div class="order-rows-button">
-<<<<<<< Updated upstream
-                    <button>Add to cart</button>
-=======
                 <button onclick="removeFromCart(3)">-</button>
                 <p>3.00 €</p>
                 <button onclick="addToCart(3, 1)">+</button>
->>>>>>> Stashed changes
                 </div>
                 <h2>Cake slice</h2>
 
@@ -146,13 +130,9 @@
                     <img src="../assets/images/cupcake.png" />
                 </div>
                 <div class="order-rows-button">
-<<<<<<< Updated upstream
-                    <button>Add to cart</button>
-=======
                 <button onclick="removeFromCart(4)">-</button>
                 <p>1.50 €</p>
                 <button onclick="addToCart(4, 1)">+</button>
->>>>>>> Stashed changes
                 </div>
                 <h2>Cup Cake</h2>
             </div>
@@ -161,13 +141,9 @@
                     <img src="../assets/images/deserts1.png" />
                 </div>
                 <div class="order-rows-button">
-<<<<<<< Updated upstream
-                    <button>Add to cart</button>
-=======
                 <button onclick="removeFromCart(5)">-</button>
                 <p>9.50 €</p>
                 <button onclick="addToCart(5, 1)">+</button>
->>>>>>> Stashed changes
                 </div>
                 <h2>Ice Cream Tray</h2>
             </div>
@@ -177,13 +153,9 @@
                     <img src="../assets/images/bobatea.png" />
                 </div>
                 <div class="order-rows-button">
-<<<<<<< Updated upstream
-                    <button>Add to cart</button>
-=======
                 <button onclick="removeFromCart(6)">-</button>
                 <p>3.00 €</p>
                 <button onclick="addToCart(6, 1)">+</button>
->>>>>>> Stashed changes
                 </div>
                 <h2>Boba-Tea</h2>
 
@@ -193,13 +165,9 @@
                     <img src="../assets/images/Coke.png" />
                 </div>
                 <div class="order-rows-button">
-<<<<<<< Updated upstream
-                    <button>Add to cart</button>
-=======
                 <button onclick="removeFromCart(7)">-</button>
                 <p>1.00 €</p>
                 <button onclick="addToCart(7, 1)">+</button>
->>>>>>> Stashed changes
                 </div>
                 <h2>Coke</h2>
             </div>
@@ -208,13 +176,9 @@
                     <img src="../assets/images/mixjuice.png" />
                 </div>
                 <div class="order-rows-button">
-<<<<<<< Updated upstream
-                    <button>Add to cart</button>
-=======
                 <button onclick="removeFromCart(8)">-</button>
                 <p>1.50 €</p>
                 <button onclick="addToCart(8, 1)">+</button>
->>>>>>> Stashed changes
                 </div>
                 <h2>Smoothie</h2>
             </div>
