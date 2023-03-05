@@ -4,7 +4,7 @@ include'header.php'; ?>
 
 
 <!-- Reservation form -->
-<form method="post" style="margin: 7rem 0 2rem 2rem;">
+<form method="post" style="margin: 7rem 0 2rem 40rem;">
   <label for="date">Date:</label><br>
   <input type="date" id="date" name="date" required><br><br>
 

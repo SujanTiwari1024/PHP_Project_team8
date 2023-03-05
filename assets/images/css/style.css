@@ -32,6 +32,10 @@ p {
     font-size: 14px;
 }
 
+/* .reserve{
+    align-items: center;
+} */
+
 body {
     background-image: url(../background2.jpg);
     background-attachment: fixed;

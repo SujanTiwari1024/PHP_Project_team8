@@ -11,9 +11,7 @@
                     <img src="../assets/images/salad.png" />
                 </div>
                 <div class="order-rows-button">
-                    <button>-</button>
-                    <button>Add</button>
-                    <button>+</button>
+                    <button>Add to cart</button>
                 </div>
                 <h3>3.30 €</h3>
                 <h2>Salad Bowl</h2>
@@ -23,9 +21,7 @@
                     <img src="../assets/images/Meal-Plan-plate-protein.png" />
                 </div>
                 <div class="order-rows-button">
-                    <button>-</button>
-                    <button>Add</button>
-                    <button>+</button>
+                    <button>Add to cart</button>
                 </div>
                 <h3>10.00 €</h3>
                 <h2>Fresh Meat with Rice</h2>
@@ -35,9 +31,7 @@
                     <img src="../assets/images/mixveg.png" />
                 </div>
                 <div class="order-rows-button">
-                    <button>-</button>
-                    <button>Add</button>
-                    <button>+</button>
+                    <button>Add to cart</button>
                 </div>
                 <h3>6.30 €</h3>
                 <h2>Vegetable Mix</h2>
@@ -48,9 +42,7 @@
                     <img src="../assets/images/cake.png" />
                 </div>
                 <div class="order-rows-button">
-                    <button>-</button>
-                    <button>Add</button>
-                    <button>+</button>
+                    <button>Add to cart</button>
                 </div>
                 <h3>3.00 €</h3>
                 <h2>Cake slice</h2>
@@ -61,9 +53,7 @@
                     <img src="../assets/images/cupcake.png" />
                 </div>
                 <div class="order-rows-button">
-                    <button>-</button>
-                    <button>Add</button>
-                    <button>+</button>
+                    <button>Add to cart</button>
                 </div>
                 <h3>1.50 €</h3>
                 <h2>Cup Cake</h2>
@@ -73,9 +63,7 @@
                     <img src="../assets/images/deserts1.png" />
                 </div>
                 <div class="order-rows-button">
-                    <button>-</button>
-                    <button>Add</button>
-                    <button>+</button>
+                    <button>Add to cart</button>
                 </div>
                 <h3>9.50 €</h3>
                 <h2>Ice Cream Tray</h2>
@@ -86,9 +74,7 @@
                     <img src="../assets/images/bobatea.png" />
                 </div>
                 <div class="order-rows-button">
-                    <button>-</button>
-                    <button>Add</button>
-                    <button>+</button>
+                    <button>Add to cart</button>
                 </div>
                 <h3>3.00 €</h3>
                 <h2>Boba-Tea</h2>
@@ -99,9 +85,7 @@
                     <img src="../assets/images/Coke.png" />
                 </div>
                 <div class="order-rows-button">
-                    <button>-</button>
-                    <button>Add</button>
-                    <button>+</button>
+                    <button>Add to cart</button>
                 </div>
                 <h3>1.00 €</h3>
                 <h2>Coke</h2>
@@ -111,9 +95,7 @@
                     <img src="../assets/images/mixjuice.png" />
                 </div>
                 <div class="order-rows-button">
-                    <button>-</button>
-                    <button>Add</button>
-                    <button>+</button>
+                    <button>Add to cart</button>
                 </div>
                 <h3>1.50 €</h3>
                 <h2>Smoothie</h2>

@@ -1,6 +1,6 @@
 <?php
 $title = "Customer List";
-include "../layout/header.php";
+include'../layouts/header.php';
 include 'db.php';
 
 
@@ -46,7 +46,4 @@ $conn-> close();
 
 ?>
 
-
-<?php ?>
-
-<?php include "../layout/footer.php" ?>
+<?php include '../layouts/footer.php' ?>
