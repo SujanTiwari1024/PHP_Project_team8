@@ -1,8 +1,8 @@
 <?php 
 
     $servername = "db";
-    $username = "team8";
-    $password = "team8pass";
+    $username = "root";
+    $password = "password";
     $dbname = "team8";
 
     // create connection

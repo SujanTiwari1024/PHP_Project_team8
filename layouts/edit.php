@@ -1,8 +1,11 @@
 <?php
 $title = "Edit customer information";
-include "header.php";
-include 'db.php';
 
+include '../layouts/header.php';
+
+include 'db.php';
+?>
+<?php
 $a = $_GET['customerId'];
 $result = mysqli_query($conn, "select * from customer where customerId = '$a'");
 $row = mysqli_fetch_array($result)
@@ -78,6 +81,8 @@ $row = mysqli_fetch_array($result)
 
 ?>
 
-<?php ?>
 
-<?php include "footer.php" ?>
+
+
+<?php include '../layouts/footer.php' ?>
+
