@@ -53,7 +53,7 @@ include "header.php";?>
                 values('$fName','$lName','$phoneNum','$nationalCode','$email','$address', '$myPass')";
                 if($conn->query($sql)===TRUE)
                     {
-                     //header("location: ../layout/index.php");
+                     header("location: ../layout/index.php");
                      echo" <h5> Your information is added successfully <h5>";
                     }
                 else
