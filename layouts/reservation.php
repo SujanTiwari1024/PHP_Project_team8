@@ -3,83 +3,65 @@ $title = "Reservation";
 include'header.php'; ?>
 
 <!-- Reservation form -->
-<form method="post" style="margin: 7rem 0 2rem 2rem;">
-<div class="row">
-        <div class="col">
-            <label for="fName">First Name:</label><br>
-            <input type="text" id="fName" name="fName" ><br><br>
-        </div>
-        
-        <div class="col">
-            <label for="lName">Last Name:</label><br>
-            <input type="text" id="lName" name="lName" ><br><br>
-        </div>
-  </div>
+<form method="post" style="margin: 12rem auto; width: 50%; font-size: 1rem;">
 
-  <div class="row">
-        <div class="col">
-            <label for="phoneNum">Phone Number:</label><br>
-            <input type="tel" id="phoneNum" name="phoneNum" ><br><br>
-        </div>
-        
-        <div class="col">
-            <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email" ><br><br>
-        </div>
-  </div>
+      <?php
 
-  <div class="row">
-        <div class="col">
+        $UserId = "z.seyedi@gmail.com";
+        include 'db.php';
+        $sql = "select customerId, fName, lName, phoneNum from customer Where email='$UserId'";
+        
+        $result = $conn->query($sql);
+        $customerId = "";
+        if($result->num_rows == 1){
+          
+          $row = $result -> fetch_assoc();
+          $customerId = $row['customerId'];
+          //echo" <table class = 'table'>
+          echo" Reseve for Customer: $row[fName] $row[lName] <br><br> phone number: $row[phoneNum] <br><br>";
+  
+        }
+        if(isset($_POST['submit']))
+          {
+            //$date = $_POST['date']; // the date to compare, in YYYY-MM-DD format
+
+            //$currentDate = new DateTime(); // get the current date and time
+            //$compareDate = new DateTime($date); // create a DateTime object from the $date string
+            
+            // if ($compareDate > $currentDate) {
+              $reservationDate=$_POST['date'];
+              $reservationTime=$_POST['time'];  
+              $numGuests=$_POST['num_guests']; 
+
+              $sql="insert into reservation(reservationDate, reservationTime, customerId, numGuests)
+                  values('$reservationDate','$reservationTime','$customerId','$numGuests')";
+              if($conn->query($sql)===TRUE){ 
+                echo" ";}
+              else{
+                echo" <h5> Reservation failed </h5>";
+              }  
+            //} else {
+            //  echo 'The date is not valid';
+            //}
+            
+          }
+      ?>
             <label for="date">Date:</label><br>
-            <input type="date" id="date" name="date" required><br><br>
-        </div>
+            <input type="date" id="date" name="date" min="<?php echo date('Y-m-d', strtotime('+1 day')); ?>" required><br><br>
         
-        <div class="col">
             <label for="time">Time:</label><br>
-            <input type="time" id="time" name="time" required><br><br>
-        </div>
-  </div>
+            <input type="time" id="time" name="time" min="17:00" max="22:00" required><br><br>
 
-  <div class="row">     
-        <div class="col">
             <label for="num_guests">Number of Guests:</label><br>
             <input type="number" id="num_guests" name="num_guests" min="1" max="10" required><br><br>
-        </div>
-  </div>
+        
+            <input type="submit" name="submit" value="Reserve">
+        </form>
 
-<input type="submit" name="submit" value="Reserve">
-
-</form>
-
-<?php
-// Submit
-if(isset($_POST['submit'])) {
-    
-  // Retrieve data
-  $date = $_POST['date'];
-  $time = $_POST['time'];
-  $num_guests = $_POST['num_guests'];
-  $fName = $_POST['fName'];
-  $lName = $_POST['lName'];
-  $phoneNum = $_POST['phoneNum'];
-  $email = $_POST['email'];
-
-  // Save to database or send email to restaurant
-  include 'db.php';
-  $sql="INSERT INTO reservation (reservationDate, reservationTime, numGuests)
-        VALUES ('$date', '$time', '$num_guests')";
-
-    $sql="INSERT INTO customer(fName, lName, phoneNum, email)
-    VALUES('$fName', '$lName', '$phoneNum','$email')";
-            
-  if($conn->query($sql) === TRUE){
-    echo "<h5>Your reservation has been confirmed</h5>";
-  } else {
-    echo "Error: " . $conn->error;
-  }
-
-  exit;
-}
-?>
+        <?php 
+          if(isset($_POST['submit']) && $conn->query($sql)===TRUE) { 
+            echo" <h5> Reserved Successfully </h5>"; 
+          }
+        ?>
 
 <?php include'footer.php'; ?>

@@ -1,10 +1,15 @@
 <?php
 $title = "Customer List";
 
-include'../layouts/header.php';
-include 'db.php';
+include'header.php';
+include 'db.php';?>
+
+</html>
+<form method="post" style="margin: 5rem 0 0 2rem;">
+    <h4>List of customer</h4>
 
 
+<?php
 $sql ="select * from customer";
 $result = $conn->query($sql);
 
@@ -21,12 +26,14 @@ if($result->num_rows > 0){
         <th>    National Code   </th>
         <th>    Email           </th>  
         <th>    Address         </th>
-        </tr>";
+        </tr>
+        <tr></tr>
+        <tr></tr>";
         
     while($row = $result -> fetch_assoc()) {
         echo "
         <tr>
-        <td><a href='edit.php?customerId=$row[customerId]'>$row[customerId] </a>     </td>
+        <td><a href='edit.php?customerId=$row[customerId]'>$row[customerId] </a></td>
         
         <td> $row[fName]            </td>
         <td> $row[lName]            </td>
@@ -48,7 +55,8 @@ else
 $conn-> close();
 
 ?>
+    </form>
+</html>
 
-
-<?php include '../layouts/footer.php' ?>
+<?php include 'footer.php' ?>
 
