@@ -24,8 +24,8 @@
             <a href="reservation.php">Reservations</a>
             <a href="aboutus.php">About Us</a>
             
-            <a href="login.php">log in</a>
-            <a href="signup.php">sign up</a>
+            <a href="login.php">Log in</a>
+            <a href="signup.php">Sign up</a>
 
             <a href="customerList.php">Customer List</a>
             
