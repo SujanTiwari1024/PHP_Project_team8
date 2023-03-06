@@ -1,5 +1,6 @@
 <?php
 $title = "Customer List";
+
 include'../layouts/header.php';
 include 'db.php';
 
@@ -10,6 +11,8 @@ $result = $conn->query($sql);
 if($result->num_rows > 0){
 
     echo" <table class = 'table'>
+    <tr><th></th> <tr>
+    
         <tr>
         <th>    Id              </th> 
         <th>    First Name      </th> 
@@ -46,4 +49,6 @@ $conn-> close();
 
 ?>
 
+
 <?php include '../layouts/footer.php' ?>
+
