@@ -1,6 +1,6 @@
 <?php
 $title = "customer";
-include "header.php";?>
+include 'header.php';?>
 <form method="POST" style="margin: 5rem 0 0 2rem;">
     <h4>Sign Up Form</h4>
     <div class="row">
@@ -51,11 +51,13 @@ include "header.php";?>
                 include 'db.php';
                 $sql="insert into customer(fName, lName, phoneNum, nationalCode, email, address, myPass)
                 values('$fName','$lName','$phoneNum','$nationalCode','$email','$address', '$myPass')";
-                if($conn->query($sql)===TRUE)
-                    {
-                     header("location: ../layout/index.php");
-                     echo" <h5> Your information is added successfully <h5>";
-                    }
+                if($conn->query($sql)===TRUE){
+                
+                header("Location: ../layouts/reservation"); /* Redirect browser */
+                
+                /* Make sure that code below does not get executed when we redirect. */
+                exit;
+                }
                 else
                     {
                     echo"Error:";
@@ -63,4 +65,4 @@ include "header.php";?>
             }
     }
 ?>
-<?php include "footer.php" ?>
+<?php include 'footer.php' ?>
