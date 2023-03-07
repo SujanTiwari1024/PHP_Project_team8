@@ -37,7 +37,7 @@ p {
 } */
 
 body {
-    background-image: url(../background2.jpg);
+    background-image: url(../assets/images/background2.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -48,7 +48,6 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: rgb(206, 48, 48);
 }
 
 .top-container {
@@ -223,6 +222,96 @@ button:hover {
     text-align: center;
 }
 
+
+.signup_form {
+    width: 50vw;
+    display: flex;
+    margin: auto;
+    margin-top: 150px;
+    margin-bottom: 100px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.signin {
+    width: 50vw;
+    height: fit-content;
+    display: flex;
+    margin: auto;
+    margin-top: 150px;
+    margin-bottom: 100px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.heading {
+    text-decoration: underline;
+}
+
+.profile_info {
+    margin: auto;
+    margin-top: 130px;
+    padding-right: 20px;
+    padding-left: 20px;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f6fafa;
+    color: black;
+    border-radius: 15px;
+}
+
+.row {
+    display: flex;
+    width: 100%;
+}
+
+label {
+    margin-top: 8px;
+}
+
+input {
+    margin-top: 4px;
+}
+
+.error {
+    color: red;
+}
+
+.pop_up {
+    position: absolute;
+    top: 150px;
+    right: 30px;
+    background-color: green;
+    border-radius: 10px;
+    padding: 10px 20px 10px 20px;
+    animation: slide 3s ease-in;
+    display: none;
+}
+
+
+.button {
+    margin-top: 10px;
+    background-color: #006e6e;
+    outline: none;
+    border: none;
+    padding: 10px;
+    color: #f1f1f1;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.col {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
 @media screen and (max-width: 800px) {
     .maincourse{
         flex-direction: column;
@@ -292,5 +381,15 @@ button:hover {
     .content img {
         width: 250px;
         height: auto;
+    }
+}
+
+@keyframes slide {
+    0%, 100% {
+        right: -300px;
+        display: none;
+    }
+    50% {
+        right: 30px;
     }
 }

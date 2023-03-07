@@ -45,33 +45,22 @@ CREATE TABLE `customer` (
   `lName` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
   `phoneNum` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
   `nationalCode` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
-  `email` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
+  `email` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL UNIQUE,
   `address` varchar(200) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
-  `myPass` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL
+  `myPass` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
+  `role` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- Dumping data for table `customer`
 --
 
-INSERT INTO `customer` (`customerId`, `fName`, `lName`, `phoneNum`, `nationalCode`, `email`, `address`, `myPass`) VALUES
-(1, 'Zohreh', 'Seyedi', '0415700000', '111', 'z.seyedi@gmail.com', 'Helsinki', ''),
-(3, 'Sujan', 'Tiwari', '0451831000', '333', 's.t@gmail.com', 'Helsinki', ''),
-(4, 'Bishal', 'Shrestha', '0443071000', '444', 'b.sh@gmail.com', 'Helsinki', ''),
-(5, 'Ville', 'Lehtonen', '0449746000', '555', 'v.l@gmail.com', 'Helsinki', ''),
-(8, 'Ali', 'Morraveji', '0449746000', '888', 'a.m@gmail.com', 'Hämeenlinna', ''),
-(9, 'Neda', 'MNG', '0415753622', '999', 'n.m@gmail.com', 'Helsinki', ''),
-(81, 'S11', 'Seyedi', '04157536211', '1111', 's.s@gmail.com', 'Helsinki', '1111'),
-(82, 'ali', 'MRVJ', '0415752222', '2222', 'a.m@gmail.com', 'Hämeenlinna', '2222'),
-(83, 'Bardia', 'MRVJ', '041575959595', '9595', 'b.m@gmail.com', 'Hämeenlinna', '9595'),
-(84, 'N90', 'S90', '909090999', '9090', 'n.s@gmail.com', 'Hämeenlinna', '9090'),
-(85, 'P94', 'KD', '9494', '9494', 'p.kd@gmail.com', 'Helsinki', '9494'),
-(86, 'Mari61', 'SD', '616161', '6161', 'm.sd@gmail.com', 'Tampre', '6161'),
-(99, 'Seyedeh', 'Seyedi', '041575362', '444', 'root', 'Helsinki', 'password'),
-(100, 'Seyedeh', 'Seyedi', '041575362', '444', 'root', 'Helsinki', 'password'),
-(101, 'Seyedeh', 'Seyedi', '041575362', '444', 'root', 'Helsinki', 'password'),
-(102, 'Seyedeh', 'Seyedi', '041575362', '555', 'root', 'Helsinki', 'password'),
-(103, 'Seyedeh', 'Seyedi', '0415753624', '2324324', 'root3333', 'Helsinki', 'password');
+INSERT INTO `customer` (`customerId`, `fName`, `lName`, `phoneNum`, `nationalCode`, `email`, `address`, `myPass`, `role`) VALUES
+(1, 'Zohreh', 'Seyedi', '0415700000', '111', 'z.seyedi@gmail.com', 'Helsinki', '1234', 'admin'),
+(3, 'Sujan', 'Tiwari', '0451831000', '333', 's.t@gmail.com', 'Helsinki', '1234', 'admin'),
+(4, 'Bishal', 'Shrestha', '0443071000', '444', 'b.sh@gmail.com', 'Helsinki', '1234','admin'),
+(5, 'Ville', 'Lehtonen', '0449746000', '555', 'v.l@gmail.com', 'Helsinki', '1234', 'admin'),
+(8, 'Ali', 'Morraveji', '0449746000', '888', 'a.m@gmail.com', 'Hämeenlinna', '1234', 'customer');
 
 -- --------------------------------------------------------
 
