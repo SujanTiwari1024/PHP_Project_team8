@@ -81,5 +81,4 @@ if(isset($_POST['submit'])) {
   exit;
 }
 ?>
-
-<?php include'footer.php'; ?>
+<?php include'footer.php';?>

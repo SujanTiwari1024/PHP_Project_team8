@@ -10,7 +10,7 @@ $result = $conn->query($sql);
 
 if($result->num_rows > 0){
 
-    echo" <table class = 'table'>
+    echo" <table class = 'table' style ='margin:auto; margin-top:150px; width:90%;'>
     <tr><th></th> <tr>
     
         <tr>
