@@ -29,7 +29,6 @@
     }
 ?>
 
-<<<<<<< HEAD
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -43,11 +42,6 @@
 <!DOCTYPE html>
 <html>
 <form method="post" action="" onsubmit="return crud()" name="Form1" style="margin: 12rem auto; width: 50%;">
-=======
-<form method="POST" class="signup_form">
-    <?php echo "<h3 class='error'>".$error."</h3>";?>
-    
->>>>>>> 0701b88c1a10d8e537d289cef3e20fe12da2267c
     <h4>Sign Up Form</h4>
         <div class="col">
             <label>First Name:</label>
@@ -87,7 +81,6 @@
         </div>
     <input class="button" type ="submit" value ="submit" name="submit" >
 </form>
-<<<<<<< HEAD
 </html>
 
 <script>
@@ -135,7 +128,3 @@
 </script>
 
 <?php include 'footer.php' ?>
-=======
-
-<?php include 'footer.php'?>
->>>>>>> 0701b88c1a10d8e537d289cef3e20fe12da2267c

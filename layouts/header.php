@@ -43,6 +43,8 @@ if (isset($_GET['logout'])) {
 
 </head>
 
+<body>
+
     <div class="header">
             <a class="logo-con" href="index.php">
                 <img src="../assets/images/cool-logo01.png" alt="cool-logo01" class="logo">
