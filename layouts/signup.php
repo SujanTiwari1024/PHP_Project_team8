@@ -1,7 +1,8 @@
+<?php include 'header.php';?>
+
 <?php
-$title = "customer";
-    if(isset($_POST['submit']))
-    {
+    $error = '';
+    if(isset($_POST['submit'])) {
         $fName=$_POST['fName'];
         $lName=$_POST['lName'];
         $phoneNum=$_POST['phoneNum'];
@@ -10,70 +11,65 @@ $title = "customer";
         $address=$_POST['address'];
         $myPass=$_POST['myPass'];
         $confirm_password=$_POST['confirm_password'];
-        $servername = "db";
-        $username = "team8";
-        $password = "team8pass";
-        $dbname = "team8";
-        //include('db.php');
-        if ($myPass == $confirm_password)
-        {
-            $conn = new mysqli($servername, $username, $password, $dbname);
+        if ($myPass != $confirm_password) {
+            $error = "Password and Confirm Password do not match";
+        }
+        else {
+            include 'db.php';
             $sql="insert into customer(fName, lName, phoneNum, nationalCode, email, address, myPass)
-            values('$fName','$lName','$phoneNum','$nationalCode','$email','$address', '$myPass')"; 
-            if($conn->query($sql)===TRUE){                
-                //echo" <h5> Your information is added successfully <h5>";
-                header("Location: index.php");
-                exit;
+            values('$fName','$lName','$phoneNum','$nationalCode','$email','$address', '$myPass')";
+            if($conn->query($sql) === TRUE) {
+                $_SESSION['email'] = $email;
+                echo "<script>window.location.href='profile.php'</script>";
             }
-            else{
-                echo"Error:" .$conn->Error;
+            else {
+                $error = "Error occured while registering user";
             }
-        }else
-            {
-            echo"Password and Confirm Password do not match";
-            } 
+        }
     }
 ?>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cool Restaurant</title>
-    <!--<link rel="stylesheet" href="style.css"> -->
-
-</head>
-
-<?php include 'header.php'?>
-<!DOCTYPE html>
-<html>
-<form method="post" style="margin: 5rem 0 0 2rem;">
+<form method="POST" class="signup_form">
+    <?php echo "<h3 class='error'>".$error."</h3>";?>
+    
     <h4>Sign Up Form</h4>
-    <div class="row">
         <div class="col">
-            First Name:     <br><input type ="text" name ="fName" placeholder="" required size="30"> <br><br>
-            Last Name:      <br><input type ="text" name ="lName" placeholder="" required size="30"><br><br>
+            <label>First Name:</label>
+            <input type ="text" name ="fName" placeholder="Enter your name here" required size="30">
         </div>
         <div class="col">
-            Phone Number:   <br><input type ="text" name ="phoneNum" placeholder="" required size="30"><br><br>
-            National Code:  <br><input type ="text" name ="nationalCode" placeholder="" size="30"><br><br>
+            <label>Last Name:</label>
+            <input type ="text" name ="lName" placeholder="Enter your surname here" required size="30">
         </div>
         <div class="col">
-            Address:        <br><select name="address" style="width: 250px;">
-                                <option value="Helsinki"> Helsinki </option>
-                                <option value="Hämeenlinna"> Hämeenlinna </option>
-                                <option value="Tampre"> Tampre </option>
-                            </select><br><br>
+            <label>Phone Number:</label>
+            <input type ="text" name ="phoneNum" placeholder="Enter your phone number here" required size="30">
         </div>
-    </div>
-    <div class="row">
         <div class="col">
-            Email:              <br><input type ="text" name ="email" placeholder="" required size="30"><br><br>
-            Password:           <br><input type ="password" name="myPass" required><br><br>
-            Confirm password:   <br><input type ="password" name="confirm_password" required><br><br>
+            <label>National Code:</label>
+            <input type ="text" name ="nationalCode" placeholder="Enter national Code here" required size="30">
         </div>
-    </div>
-    <input type ="submit" value ="submit" name="submit" ><br><br>
+        <div class="col">
+            <label>Address:</label>
+            <select name="address" style="width: 250px;">
+                <option value="Helsinki"> Helsinki </option>
+                <option value="Hämeenlinna"> Hämeenlinna </option>
+                <option value="Tampre"> Tampre </option>
+            </select>
+        </div>
+        <div class="col">
+            <label>Email:</label>
+            <input type ="text" name ="email" placeholder="abc@gmail.com" required size="30">
+        </div>
+        <div class="col">
+            <label>Password:</label>
+            <input type ="password" name="myPass" required>
+        </div>
+        <div class="col">
+            <label>Confirm password:</label>
+            <input type ="password" name="confirm_password" required>
+        </div>
+    <input class="button" type ="submit" value ="submit" name="submit" >
 </form>
-</html>
-<?php include 'footer.php' ?>
+
+<?php include 'footer.php'?>

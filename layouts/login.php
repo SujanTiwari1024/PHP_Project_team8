@@ -10,29 +10,14 @@ include "header.php";?>
   <body>
     <?php
       $error = '';
-      if (isset($_POST['submit'])) 
-      {
+      if (isset($_POST['submit'])) {
         $email = $_POST['email'];
         $myPass = $_POST['myPass'];
          
-        if (empty($_POST['email']) || empty($_POST['myPass'])) 
-        {
-          $error = "Email or Password is invalid";
+        if (empty($_POST['email']) || empty($_POST['myPass'])) {
+          $error = "Email or Password is required";
         }
-        else 
-        {
-          // Connect to database
-          //$mysqli = new mysqli("localhost", "username", "password", "database_name");
-          //$conn = new mysqli($servername, $username, $password, $dbname);
-          
-          include 'db.php';
-
-          // Check for any connection errors
-          if ($conn->connect_error) 
-          {
-            die("Connection failed: " . $conn->connect_error);
-          }
-
+        else {
           // username & password checking
           $sql = "SELECT * FROM customer WHERE email = '$email' AND myPass = '$myPass'";
           $result = $conn->query($sql);
@@ -40,18 +25,18 @@ include "header.php";?>
           // If the query returned a row, username & password are valid
           if ($result->num_rows > 0) 
           {
-            // Redirect to index.php
-            //header("Location: reservation.php");
-            echo"welcome";
-            exit();
+            $_SESSION['email'] = $email;
+            echo "<script>window.location.href='profile.php'</script>";
           } else {
-            echo "username or password are valid";
+            $error ="username or password are not valid";
           }
       }
     }
     ?>
+    
+    <form method="post" class="signin">
     <h2>Login Form</h2>
-    <form method="post" style="margin: 2rem 0 0 2rem;">
+    <h4 class="error"><?php echo $error; ?></h4>
         <label>Email:</label>
             <input type="text" name="email" required><br><br>
         <label>Password:</label>
@@ -65,8 +50,6 @@ include "header.php";?>
         <div class="container" style="background-color:#white">
           <span class="psw">Forgot <a href="#">password?</a></span>
         </div>
-
-      <span><?php echo $error; ?></span>
 
     </form>
   </body>
