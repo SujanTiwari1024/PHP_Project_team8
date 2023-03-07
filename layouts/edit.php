@@ -12,9 +12,9 @@ $row = mysqli_fetch_array($result)
 
 ?>
 
-<h3> Update or Delete </h3>
-
-<form action="" method="post" style="margin: 5rem 0 0 2rem;">
+<form action="" method="post" style="margin: 3rem auto; width: 50%;">
+    
+    <h3> Update or Delete </h3><br>
 
     <label>First Name:</label><br>
     <input type ="text" name ="fName" placeholder="" required value = "<?php echo $row['fName'];?>"> <br><br>

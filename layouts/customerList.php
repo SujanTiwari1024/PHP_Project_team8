@@ -5,7 +5,7 @@ include'header.php';
 include 'db.php';?>
 
 </html>
-<form method="post" style="margin: 5rem 0 0 2rem;">
+<form method="post" style="margin: 12rem auto; width: 70%;">
     <h4>List of customer</h4>
 
 

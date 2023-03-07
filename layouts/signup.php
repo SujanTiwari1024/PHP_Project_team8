@@ -47,7 +47,7 @@ $title = "customer";
 <?php include 'header.php'?>
 <!DOCTYPE html>
 <html>
-<form method="post" style="margin: 5rem 0 0 2rem;">
+<form method="post" action="" onsubmit="return crud()" name="Form1" style="margin: 12rem auto; width: 50%;">
     <h4>Sign Up Form</h4>
     <div class="row">
         <div class="col">
@@ -76,4 +76,15 @@ $title = "customer";
     <input type ="submit" value ="submit" name="submit" ><br><br>
 </form>
 </html>
+
+<script>
+    function crud(){
+    let fName=(document.Form1.fName.value).trim();
+    if(fName.length<3){
+        alert("Name must not be more than 15 characters");
+        return false;
+    }
+}
+</script>
+
 <?php include 'footer.php' ?>
